@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+}
+.box,
+.step,
+.partner-logo,
+.audience div {
+    transition: all 0.3s ease;
+}
+
+.box:hover,
+.step:hover,
+.partner-logo:hover,
+.audience div:hover {
+    transform: translateY(-8px);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #0B3D75;
+    background: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 70px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+button {
+    transition: all 0.3s ease;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.payment-card {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0B3D75;
+    margin-left: 28px;
+    font-weight: 700;
+}
+
+.language-btn {
+    background: white;
+    color: #0B3D75;
+    border: 2px solid #0B3D75;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 90px 70px;
+    min-height: 85vh;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.eyebrow {
+    color: #4CC7B0;
+    font-weight: 800;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 21px;
+    color: #6B7280;
+    line-height: 1.6;
+    max-width: 680px;
+}
+
+.urdu-line {
+    font-size: 24px;
+    color: #4CC7B0;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+button {
+    background: #4CC7B0;
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3bb39f;
+}
+
+.outline-btn {
+    background: white;
+    color: #0B3D75;
+    border: 2px solid #0B3D75;
+    margin-left: 12px;
+}
+
+.hero-card {
+    width: 45%;
+    background: linear-gradient(135deg, #e9fbf8, #ffffff);
+    border-radius: 36px;
+    padding: 60px;
+    box-shadow: 0 20px 60px rgba(11, 61, 117, 0.12);
+}
+
+.payment-card {
+    background: white;
+    border-radius: 28px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(11, 61, 117, 0.12);
+}
+
+.payment-card h3 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.card-label {
+    color: #6B7280;
+    font-weight: bold;
+}
+
+.partners {
+    padding: 70px;
+    text-align: center;
+    overflow: hidden;
+    background: #f7fbfb;
+}
+
+.logo-slider {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.logo-track {
+    display: flex;
+    gap: 24px;
+    animation: slide 22s linear infinite;
+}
+
+.partner-logo {
+    min-width: 220px;
+    background: white;
+    border-radius: 18px;
+    padding: 26px 30px;
+    font-weight: 800;
+    box-shadow: 0 8px 25px rgba(11, 61, 117, 0.08);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.about {
+    padding: 90px 160px;
+    text-align: center;
+}
+
+.about p {
+    color: #6B7280;
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+.why,
+.how,
+.security,
+.faqs {
+    padding: 90px 70px;
+}
+
+.grid,
+.steps {
+    display: flex;
+    gap: 30px;
+}
+
+.box,
+.step {
+    flex: 1;
+    background: #f7fbfb;
+    padding: 35px;
+    border-radius: 24px;
+}
+
+.box h3,
+.step h3 {
+    font-size: 25px;
+}
+
+.box p,
+.step p {
+    color: #6B7280;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.step span {
+    color: #4CC7B0;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.use-cases {
+    padding: 90px 70px;
+    background: #0B3D75;
+    color: white;
+    text-align: center;
+}
+
+.use-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.use-grid div {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 28px;
+    border-radius: 18px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.audience {
+    display: flex;
+    gap: 30px;
+    padding: 90px 70px;
+}
+
+.audience div {
+    flex: 1;
+    background: #e9fbf8;
+    padding: 45px;
+    border-radius: 28px;
+}
+
+.audience p {
+    color: #6B7280;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.faqs details {
+    background: #f7fbfb;
+    margin-bottom: 16px;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.faqs summary {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faqs p {
+    color: #6B7280;
+    font-size: 18px;
+}
+
+footer {
+    background: #0B3D75;
+    color: white;
+    padding: 60px 70px;
+}
+
+footer p {
+    color: #dbeafe;
+}
+
+@media (max-width: 900px) {
+    .navbar,
+    .hero,
+    .grid,
+    .steps,
+    .audience {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero-text,
+    .hero-card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .about {
+        padding: 60px 30px;
+    }
+
+    .why,
+    .how,
+    .security,
+    .faqs,
+    .partners,
+    .use-cases,
+    .audience,
+    .hero,
+    .navbar,
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .use-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .outline-btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
+html[dir="rtl"] body {
+    direction: rtl;
+}
+
+html[dir="rtl"] .navbar,
+html[dir="rtl"] .hero,
+html[dir="rtl"] .grid,
+html[dir="rtl"] .steps,
+html[dir="rtl"] .audience {
+    direction: rtl;
+}
+
+html[dir="rtl"] nav a {
+    margin-left: 0;
+    margin-right: 28px;
+}
+
+html[dir="rtl"] .outline-btn {
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+html[dir="rtl"] .step,
+html[dir="rtl"] .box,
+html[dir="rtl"] .audience div {
+    text-align: right;
+}
+
+.language-btn {
+    text-decoration: none;
+    display: inline-block;
+}

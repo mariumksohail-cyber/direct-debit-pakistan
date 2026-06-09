@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Debit Pakistan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+document.querySelectorAll('.fade-in').forEach((el)=>{
+    observer.observe(el);
+});
+</script>
+
+
+
+
+<section class="about fade-in"></section>
+
+<section class="why fade-in"></section>
+
+
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Direct Debit Pakistan</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#how">How It Works</a>
+        <a href="#security">Security</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="index.html" class="language-btn">English</a>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <p class="eyebrow">SIMPLE. SECURE. RELIABLE.</p>
+
+        <h1 id="hero-title">Secure Recurring Payments for a Digital Pakistan.</h1>
+
+        <p class="subtitle">
+            Direct Debit Pakistan helps individuals, businesses and banks manage automatic payments safely, on time, and with full user authorization.
+        </p>
+
+        <p class="urdu-line">
+            پاکستان کے لیے محفوظ اور خودکار ادائیگیوں کا جدید نظام
+        </p>
+
+        <div class="hero-buttons">
+            <button>Sign in with Pak ID</button>
+            <button class="outline-btn">Continue with OTP</button>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="payment-card">
+            <p class="card-label">Upcoming Payment</p>
+            <h3>Electricity Bill</h3>
+            <p>Due today · PKR 8,420</p>
+            <button>Authorize Payment</button>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <p class="eyebrow">TRUSTED FINANCIAL ECOSYSTEM</p>
+    <h2>Built for Pakistan’s Digital Payment Future</h2>
+
+    <div class="logo-slider">
+        <div class="logo-track">
+            <div class="partner-logo">State Bank of Pakistan</div>
+            <div class="partner-logo">Raast</div>
+            <div class="partner-logo">NADRA</div>
+            <div class="partner-logo">1LINK</div>
+            <div class="partner-logo">Banks</div>
+            <div class="partner-logo">Fintechs</div>
+
+            <div class="partner-logo">State Bank of Pakistan</div>
+            <div class="partner-logo">Raast</div>
+            <div class="partner-logo">NADRA</div>
+            <div class="partner-logo">1LINK</div>
+            <div class="partner-logo">Banks</div>
+            <div class="partner-logo">Fintechs</div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>What is Direct Debit?</h2>
+    <p>
+        Direct Debit is a secure payment method that allows approved recurring payments to be collected automatically from a user’s bank account. It can be used for bills, school fees, subscriptions, insurance, loans and business payments.
+    </p>
+</section>
+
+<section class="why">
+    <h2>Why Direct Debit Pakistan?</h2>
+
+    <div class="grid">
+        <div class="box">
+            <h3>Less Missed Payments</h3>
+            <p>Users can avoid late fees by scheduling recurring payments automatically.</p>
+        </div>
+
+        <div class="box">
+            <h3>Better Cash Flow</h3>
+            <p>Businesses can collect payments on time with clear customer authorization.</p>
+        </div>
+
+        <div class="box">
+            <h3>User Control</h3>
+            <p>Customers approve, view and manage payment mandates before collections happen.</p>
+        </div>
+    </div>
+</section>
+
+<section class="how" id="how">
+    <h2>How It Works</h2>
+
+    <div class="steps">
+        <div class="step">
+            <span>01</span>
+            <h3>Verify Identity</h3>
+            <p>User signs in through Pak ID or verifies using OTP.</p>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <h3>Authorize Mandate</h3>
+            <p>The user approves a payment instruction for a specific merchant.</p>
+        </div>
+
+        <div class="step">
+            <span>03</span>
+            <h3>Pay Automatically</h3>
+            <p>Payments are collected securely on the agreed date.</p>
+        </div>
+    </div>
+</section>
+
+<section class="use-cases">
+    <h2>Common Use Cases</h2>
+
+    <div class="use-grid">
+        <div>Utility Bills</div>
+        <div>School Fees</div>
+        <div>Insurance Premiums</div>
+        <div>Internet Subscriptions</div>
+        <div>Loan Repayments</div>
+        <div>SME Payments</div>
+    </div>
+</section>
+
+<section class="audience">
+    <div>
+        <h2>For Individuals</h2>
+        <p>Manage recurring payments easily without manually transferring money every month.</p>
+    </div>
+
+    <div>
+        <h2>For Businesses</h2>
+        <p>Collect payments securely and reduce delays, failed payments and manual follow-ups.</p>
+    </div>
+</section>
+
+<section class="security" id="security">
+    <p class="eyebrow">SECURITY FIRST</p>
+    <h2>Designed for Trust</h2>
+
+    <div class="grid">
+        <div class="box">
+            <h3>Identity Verification</h3>
+            <p>Secure login through Pak ID or OTP-based verification.</p>
+        </div>
+
+        <div class="box">
+            <h3>Mandate Approval</h3>
+            <p>Every payment instruction requires user authorization.</p>
+        </div>
+
+        <div class="box">
+            <h3>Audit Trail</h3>
+            <p>Clear records help users, banks and businesses track payment activity.</p>
+        </div>
+    </div>
+</section>
+
+<section class="faqs" id="faqs">
+    <h2>FAQs</h2>
+
+    <details>
+        <summary>Can users cancel a Direct Debit?</summary>
+        <p>Yes. Users should be able to view, manage or cancel active payment mandates.</p>
+    </details>
+
+    <details>
+        <summary>Is Direct Debit only for businesses?</summary>
+        <p>No. It benefits individuals, businesses, banks, fintechs and service providers.</p>
+    </details>
+
+    <details>
+        <summary>What can Direct Debit be used for?</summary>
+        <p>It can be used for bills, fees, subscriptions, insurance, rent and other recurring payments.</p>
+    </details>
+</section>
+
+<footer id="contact">
+    <h2>Direct Debit Pakistan</h2>
+    <p>Secure recurring payments for a digital Pakistan.</p>
+    <p>© 2026 Direct Debit Pakistan. Concept homepage.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
